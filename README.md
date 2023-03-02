@@ -53,18 +53,18 @@ cd ../express-api
 npm i
 ```
 
-Para executar o front-end, navegue até o diretório "react-markdown" e execute o comando a seguir:
-
-```
-cd react-markdown
-npm run start
-```
-
 Para executar a API, navegue até o diretório "express-api" e execute o comando a seguir:
 
 ```
 cd express-api
 npm run dev
+```
+
+Para executar o front-end, navegue até o diretório "react-markdown" e execute o comando a seguir:
+
+```
+cd react-markdown
+npm run start
 ```
 
 **Observação**: Para o front-end e a API funcionarem corretamente, é necessário que ambos estejam sendo executados ao mesmo tempo.
