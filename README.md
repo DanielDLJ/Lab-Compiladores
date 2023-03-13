@@ -85,7 +85,7 @@ cd express-api
 npm install
 ```
 
-3. Execute o comando npm test. Isso irá executar os testes automatizados.
+3. Execute o comando npm run test. Isso irá executar os testes automatizados.
 
 ```
 npm run test
