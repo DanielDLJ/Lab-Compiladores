@@ -678,6 +678,7 @@ export class Lexer {
         if (this.isBold() || this.isItalic()) {
           return true;
         }
+        this.concatText(char);
         return false;
       // this.error(`'*' a mais`);
       case '#':
