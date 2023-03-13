@@ -68,3 +68,14 @@ npm run start
 ```
 
 **Observação**: Para o front-end e a API funcionarem corretamente, é necessário que ambos estejam sendo executados ao mesmo tempo.
+
+### Testes
+
+Para executar os testes automatizados, siga os seguintes passos:
+
+```
+cd express-api
+npm run test
+```
+
+Caso todos os testes passem com sucesso, você deverá ver uma mensagem informando que todos os testes foram executados com sucesso. Caso contrário, o Jest irá exibir uma mensagem de erro indicando qual teste falhou e o motivo do erro.
