@@ -73,8 +73,21 @@ npm run start
 
 Para executar os testes automatizados, siga os seguintes passos:
 
+1. Navegue até a pasta express-api do projeto.
+
 ```
 cd express-api
+```
+
+2. Certifique-se de que todas as dependências do projeto estão instaladas. Para isso, execute o comando npm install.
+
+```
+npm install
+```
+
+3. Execute o comando npm test. Isso irá executar os testes automatizados.
+
+```
 npm run test
 ```
 
