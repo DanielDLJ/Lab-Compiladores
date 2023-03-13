@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 import express, { Request, Response } from 'express';
+import { CompilerError } from './compiler/ast/compilerError';
 // eslint-disable-next-line no-var
 var app = express();
 import { Compiler } from './compiler/compiler';
@@ -44,7 +45,8 @@ app.post('/', (req: Request, res: Response) => {
     res.json({ result: result, error: null });
   } catch (error) {
     console.log('Passou no catch', new Date().toLocaleTimeString());
-    res.json({ result: null, error: error });
+    const { line, token, message } = error as unknown as CompilerError;
+    res.json({ result: null, error: { line, token, message } });
   }
 });
 
